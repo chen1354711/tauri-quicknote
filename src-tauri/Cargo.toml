@@ -1,6 +1,6 @@
 [package]
 name = "tauri-quicknote"
-version = "0.1.0"
+version = "0.1.1"
 description = "A tiny Tauri 2 demo: quick notes + system info"
 authors = ["dsh"]
 edition = "2021"

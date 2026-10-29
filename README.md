@@ -51,7 +51,7 @@ tauri-quicknote/
 
 - `npm run typecheck` 通过（TypeScript strict、`noUnusedLocals`）。
 - `npm run build` 通过：`dist/assets/index-*.js` **226 KB（gzip 71 KB）**、CSS 7.3 KB —— React 19 带来的增量很小。
-- `npx tauri build --bundles app` 构建成功：`Tauri速记.app` **6.07 MiB**（Rust 增量编译约 29s）。
+- `npx tauri build --bundles app` 构建成功：`TauriQuickNote.app` **6.07 MiB**（Rust 增量编译约 29s）。
 - 应用已在本机重启：LaunchServices 显示 `Tauri速记` 为前台应用（pid 80963），WebKit WebContent 子进程在线。
 - UI 预览：`preview.png`（系统未授予 Screen Recording 权限，无法直接截真实窗口；此图由无头 Chrome 加载真实 `dist/` + mock IPC 渲染）。
 
@@ -104,7 +104,7 @@ npm run tauri build
 
 ## 产物
 
-`src-tauri/target/release/bundle/macos/Tauri速记.app`（`npm run tauri build` 会额外出 `dmg/`）。
+`src-tauri/target/release/bundle/macos/TauriQuickNote.app`（`npm run tauri build` 会额外出 `dmg/`）。
 
 ## 在线更新
 
