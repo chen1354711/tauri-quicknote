@@ -1,0 +1,21 @@
+# Rust toolchain installed locally (not committed)
+.cargo/
+.rustup/
+rustup-init.sh
+
+# updater signing key (keep the private key out of version control)
+.tauri/
+
+# npm
+node_modules/
+.npm-cache/
+
+# build output
+src-tauri/target/
+dist/
+
+# macOS
+.DS_Store
+
+# local notes (runtime data lives in ~/Library/Application Support, not here)
+*.log

@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"主窗口的默认权限：只开放核心 API，不引入额外插件","local":true,"windows":["main"],"permissions":["core:default","updater:default","process:default"]}}

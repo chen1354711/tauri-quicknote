@@ -1,0 +1,25 @@
+[package]
+name = "tauri-quicknote"
+version = "0.1.0"
+description = "A tiny Tauri 2 demo: quick notes + system info"
+authors = ["dsh"]
+edition = "2021"
+rust-version = "1.90.0"
+
+[build-dependencies]
+tauri-build = { version = "2.7.4", features = [] }
+
+[dependencies]
+tauri = { version = "2.12.5", features = [] }
+tauri-plugin-process = "2"
+tauri-plugin-updater = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# 和 CC Switch / Cockpit Tools 一样，对 release 做体积优化：
+# lto + opt-level=s + strip，换来更小的 .app（构建会慢一些）
+[profile.release]
+codegen-units = 16
+lto = "thin"
+opt-level = "s"
+strip = true
